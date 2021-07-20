@@ -1,0 +1,16 @@
+.btn {
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 0.2em;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    width: 4.7em;
+    border: none;
+    cursor: pointer;
+}
+
+.activeBtn {
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(185, 41%, 84%);
+}

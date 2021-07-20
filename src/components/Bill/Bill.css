@@ -1,0 +1,15 @@
+.billDiv {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0em 2em 4em;
+}
+
+.billDiv label {
+    font-weight: 600;
+    color: hsl(186, 14%, 43%);
+}
+
+#billInput {
+    background: url('../../images/icon-dollar.svg') no-repeat scroll 0.65em
+        0.45em hsl(189, 41%, 97%);
+}
