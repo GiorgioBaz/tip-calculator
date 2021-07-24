@@ -10,6 +10,11 @@
     cursor: pointer;
 }
 
+.btn:hover {
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(185, 41%, 84%);
+}
+
 .activeBtn {
     color: hsl(183, 100%, 15%);
     background-color: hsl(185, 41%, 84%);
