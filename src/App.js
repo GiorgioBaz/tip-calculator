@@ -5,6 +5,7 @@ import './App.css';
 import Card from './components/UI/Card/Card';
 import Bill from './components/Bill/Bill';
 import TipPercent from './components/TipPercent/TipPercent';
+import PeopleNo from './components/PeopleNo/PeopleNo';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <div className="col">
           <Bill />
           <TipPercent />
+          <PeopleNo />
         </div>
         <div className="col">
           <p>hi</p>

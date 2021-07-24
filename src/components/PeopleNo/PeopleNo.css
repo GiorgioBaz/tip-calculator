@@ -1,0 +1,15 @@
+.peopleDiv {
+    display: flex;
+    flex-direction: column;
+    margin: 0em 0em 3em 4em;
+}
+
+.peopleDiv label {
+    font-weight: 600;
+    color: hsl(186, 14%, 43%);
+}
+
+#peopleInput {
+    background: url('../../images/icon-person.svg') no-repeat scroll 0.65em
+        0.45em hsl(189, 41%, 97%);
+}
