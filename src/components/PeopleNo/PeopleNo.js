@@ -7,6 +7,7 @@ const PeopleNo = (props) => {
 
     const handleChange = (e) => {
         setPeople(e.target.value)
+        props.people(+e.target.value)
     }
 
     return (

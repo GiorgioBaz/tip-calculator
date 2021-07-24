@@ -1,0 +1,56 @@
+.tipCalcDiv {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 1.125em;
+    min-height: 87%;
+    width: 87%;
+    flex-direction: row;
+}
+
+.tipAmountDiv {
+    display: flex;
+    margin: 2em 2em 0em 2em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tipAmountDiv label,
+.totalAmountDiv label {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.tipAmountDiv span,
+.totalAmountDiv span {
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+    font-size: small;
+}
+
+#tipAmount,
+#totalAmount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+    line-height: 0.25em;
+}
+
+.totalAmountDiv {
+    display: flex;
+    margin: 0em 2em 0em 2em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resetDiv {
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+.resetBtn {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border: none;
+    width: 85%;
+    font-size: 1.5rem;
+}

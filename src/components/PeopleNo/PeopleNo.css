@@ -1,7 +1,7 @@
 .peopleDiv {
     display: flex;
     flex-direction: column;
-    margin: 0em 0em 3em 4em;
+    margin: 0em 0em 3em 3em;
 }
 
 .peopleDiv label {

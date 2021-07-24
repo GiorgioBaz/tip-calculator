@@ -8,6 +8,9 @@ const TipPercent = (props) => {
     const [tipPercent, setTipPercent] = useState('')
     const [btnPercent, setBtnPercent] = useState('')
 
+    //TODO: Move state over to app component and figure out how to do the blurring effect along with extra logic for the fields vs the buttons %
+    //Change the onBlur to an onClick
+
     const handleChange = (e) => {
         setTipPercent(e.target.value)
     }
