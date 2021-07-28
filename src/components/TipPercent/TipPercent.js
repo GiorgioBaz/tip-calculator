@@ -1,24 +1,27 @@
-import { useState } from "react";
 
 import Button from "../UI/Button/Button";
 
 import './TipPercent.css'
 
 const TipPercent = (props) => {
-    const [tipPercent, setTipPercent] = useState('')
-    const [btnPercent, setBtnPercent] = useState('')
+    //TODO: Figure out how to fix onBlur issues with classes
 
     const handleChange = (e) => {
-        setTipPercent(e.target.value)
+        props.setTip(e.target.value, "input")
     }
 
     const handleActive = (e) => {
         e.target.classList.add('activeBtn')
-        setBtnPercent(e.target.value) // Probs wont be handling this shit here btw
+        props.setTip(e.target.value, "btn")
     }
 
     const handleBlur = (e) => {
         e.target.classList.remove('activeBtn')
+        console.log(e)
+    }
+
+    const handleTipType = () => {
+        props.setTip(0, "btn")
     }
 
 
@@ -33,7 +36,7 @@ const TipPercent = (props) => {
             <div className="row">
                 <Button value="0.25" onClick={handleActive} onBlur={handleBlur}>25%</Button>
                 <Button value="0.5" onClick={handleActive} onBlur={handleBlur}>50%</Button>
-                <input value={tipPercent} type="number" min="1" step="1" id='tipInput' placeholder="Custom" onChange={handleChange} />
+                <input value={props.value} type="number" min="1" step="1" id='tipInput' placeholder="Custom" onClick={handleTipType} onChange={handleChange} />
             </div>
         </div>
     )

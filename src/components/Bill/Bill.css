@@ -1,7 +1,7 @@
 .billDiv {
     display: flex;
     flex-direction: column;
-    margin: 3em 0em 2em 4em;
+    margin: 3em 0em 2em 3em;
 }
 
 .billDiv label {

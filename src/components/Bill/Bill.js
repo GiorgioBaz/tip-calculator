@@ -1,17 +1,14 @@
-import { useState } from 'react'
-
 import './Bill.css'
 
-const Bill = () => {
-    const [bill, setBill] = useState(0)
+const Bill = (props) => {
 
     const handleChange = (e) => {
-        setBill(e.target.value)
+        props.onChange(e.target.value)
     }
     return (
         <div className="billDiv">
             <label htmlFor="#billInput">Bill</label>
-            <input value={bill} type="number" min="1" step="any" id='billInput' onChange={handleChange} />
+            <input value={props.value} type="number" min="1" step="any" id='billInput' onChange={handleChange} />
         </div>
     )
 }
