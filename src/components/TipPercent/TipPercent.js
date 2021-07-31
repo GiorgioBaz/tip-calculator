@@ -11,19 +11,16 @@ const TipPercent = (props) => {
     }
 
     const handleActive = (e) => {
-        e.target.classList.add('activeBtn')
+        e.target.classList.toggle('activeBtn')
         props.setTip(e.target.value, "btn")
     }
 
     const handleBlur = (e) => {
-        e.target.classList.remove('activeBtn')
-        console.log(e)
     }
 
     const handleTipType = () => {
         props.setTip(0, "btn")
     }
-
 
     return (
         <div className="tipDiv">

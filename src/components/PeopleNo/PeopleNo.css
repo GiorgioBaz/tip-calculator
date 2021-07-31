@@ -13,3 +13,14 @@
     background: url('../../images/icon-person.svg') no-repeat scroll 0.65em
         0.45em hsl(189, 41%, 97%);
 }
+
+.invalid {
+    border: 2px solid red !important;
+    color: red;
+}
+
+#errMsg {
+    margin-left: 8em;
+    color: red;
+    font-weight: 600;
+}

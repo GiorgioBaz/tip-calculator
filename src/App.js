@@ -35,15 +35,15 @@ function App() {
   }
 
   const handleTipCalculator = () => {
-    //TODO: Fix calculation logic with Math 
-    //TODO: Add general validation for NaN and infinity values in the calculation
+    if (+people <= 0) {
+      return
+    }
 
-    //Note: The NaN and infinity issues are due to no validation on the people component
     const inputVal = (inputPercent / 100)
     const tipPercent = +btnPercent === 0 ? inputVal : btnPercent
     const tipCalc = ((+bill * +tipPercent)) / +people
     const totalCalc = ((+bill * +tipPercent) + +bill) / +people
-    console.log(+bill, +people, +tipPercent, tipCalc)
+
     setTipAmount(tipCalc)
     setTotalAmount(totalCalc)
   }
@@ -51,7 +51,10 @@ function App() {
   useEffect(handleTipCalculator, [btnPercent, inputPercent, bill, people])
 
   const handleSetTip = (tip) => {
-    //TODO: Reset all input forms with the reset button
+    setBill(tip)
+    setPeople(tip)
+    setBtnPercent(tip)
+    setInputPercent(tip)
     setTipAmount(tip)
     setTotalAmount(tip)
   }
